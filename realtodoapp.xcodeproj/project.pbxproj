@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD8347FC286648A400249C2A /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8347FB286648A400249C2A /* ToDoTableViewController.swift */; };
+		BD8347FE286648EE00249C2A /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8347FD286648EE00249C2A /* ToDo.swift */; };
+		BD994B58286A454100483AE8 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD994B57286A454100483AE8 /* AddToDoViewController.swift */; };
+		BD994B5C286A50EA00483AE8 /* CompleteToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD994B5B286A50EA00483AE8 /* CompleteToDoViewController.swift */; };
+		BDB4670B2866446400A4D18D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4670A2866446400A4D18D /* AppDelegate.swift */; };
+		BDB4670D2866446400A4D18D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4670C2866446400A4D18D /* SceneDelegate.swift */; };
+		BDB467122866446400A4D18D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB467102866446400A4D18D /* Main.storyboard */; };
+		BDB467152866446400A4D18D /* realtodoapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDB467132866446400A4D18D /* realtodoapp.xcdatamodeld */; };
+		BDB467172866446400A4D18D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB467162866446400A4D18D /* Assets.xcassets */; };
+		BDB4671A2866446400A4D18D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB467182866446400A4D18D /* LaunchScreen.storyboard */; };
+		BDB467252866446400A4D18D /* realtodoappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB467242866446400A4D18D /* realtodoappTests.swift */; };
+		BDB4672F2866446400A4D18D /* realtodoappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4672E2866446400A4D18D /* realtodoappUITests.swift */; };
+		BDB467312866446400A4D18D /* realtodoappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB467302866446400A4D18D /* realtodoappUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDB467212866446400A4D18D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDB466FF2866446400A4D18D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB467062866446400A4D18D;
+			remoteInfo = realtodoapp;
+		};
+		BDB4672B2866446400A4D18D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDB466FF2866446400A4D18D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB467062866446400A4D18D;
+			remoteInfo = realtodoapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD8347FB286648A400249C2A /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		BD8347FD286648EE00249C2A /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		BD994B57286A454100483AE8 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		BD994B5B286A50EA00483AE8 /* CompleteToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteToDoViewController.swift; sourceTree = "<group>"; };
+		BDB467072866446400A4D18D /* realtodoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realtodoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB4670A2866446400A4D18D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDB4670C2866446400A4D18D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDB467112866446400A4D18D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDB467142866446400A4D18D /* realtodoapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = realtodoapp.xcdatamodel; sourceTree = "<group>"; };
+		BDB467162866446400A4D18D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDB467192866446400A4D18D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDB4671B2866446400A4D18D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB467202866446400A4D18D /* realtodoappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = realtodoappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB467242866446400A4D18D /* realtodoappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtodoappTests.swift; sourceTree = "<group>"; };
+		BDB4672A2866446400A4D18D /* realtodoappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = realtodoappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB4672E2866446400A4D18D /* realtodoappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtodoappUITests.swift; sourceTree = "<group>"; };
+		BDB467302866446400A4D18D /* realtodoappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realtodoappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDB467042866446400A4D18D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB4671D2866446400A4D18D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB467272866446400A4D18D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDB466FE2866446400A4D18D = {
+			isa = PBXGroup;
+			children = (
+				BDB467092866446400A4D18D /* realtodoapp */,
+				BDB467232866446400A4D18D /* realtodoappTests */,
+				BDB4672D2866446400A4D18D /* realtodoappUITests */,
+				BDB467082866446400A4D18D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDB467082866446400A4D18D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDB467072866446400A4D18D /* realtodoapp.app */,
+				BDB467202866446400A4D18D /* realtodoappTests.xctest */,
+				BDB4672A2866446400A4D18D /* realtodoappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDB467092866446400A4D18D /* realtodoapp */ = {
+			isa = PBXGroup;
+			children = (
+				BDB4670A2866446400A4D18D /* AppDelegate.swift */,
+				BDB4670C2866446400A4D18D /* SceneDelegate.swift */,
+				BDB467102866446400A4D18D /* Main.storyboard */,
+				BD994B5B286A50EA00483AE8 /* CompleteToDoViewController.swift */,
+				BD994B57286A454100483AE8 /* AddToDoViewController.swift */,
+				BD8347FD286648EE00249C2A /* ToDo.swift */,
+				BD8347FB286648A400249C2A /* ToDoTableViewController.swift */,
+				BDB467162866446400A4D18D /* Assets.xcassets */,
+				BDB467182866446400A4D18D /* LaunchScreen.storyboard */,
+				BDB4671B2866446400A4D18D /* Info.plist */,
+				BDB467132866446400A4D18D /* realtodoapp.xcdatamodeld */,
+			);
+			path = realtodoapp;
+			sourceTree = "<group>";
+		};
+		BDB467232866446400A4D18D /* realtodoappTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDB467242866446400A4D18D /* realtodoappTests.swift */,
+			);
+			path = realtodoappTests;
+			sourceTree = "<group>";
+		};
+		BDB4672D2866446400A4D18D /* realtodoappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDB4672E2866446400A4D18D /* realtodoappUITests.swift */,
+				BDB467302866446400A4D18D /* realtodoappUITestsLaunchTests.swift */,
+			);
+			path = realtodoappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDB467062866446400A4D18D /* realtodoapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB467342866446400A4D18D /* Build configuration list for PBXNativeTarget "realtodoapp" */;
+			buildPhases = (
+				BDB467032866446400A4D18D /* Sources */,
+				BDB467042866446400A4D18D /* Frameworks */,
+				BDB467052866446400A4D18D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = realtodoapp;
+			productName = realtodoapp;
+			productReference = BDB467072866446400A4D18D /* realtodoapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDB4671F2866446400A4D18D /* realtodoappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB467372866446400A4D18D /* Build configuration list for PBXNativeTarget "realtodoappTests" */;
+			buildPhases = (
+				BDB4671C2866446400A4D18D /* Sources */,
+				BDB4671D2866446400A4D18D /* Frameworks */,
+				BDB4671E2866446400A4D18D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDB467222866446400A4D18D /* PBXTargetDependency */,
+			);
+			name = realtodoappTests;
+			productName = realtodoappTests;
+			productReference = BDB467202866446400A4D18D /* realtodoappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDB467292866446400A4D18D /* realtodoappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB4673A2866446400A4D18D /* Build configuration list for PBXNativeTarget "realtodoappUITests" */;
+			buildPhases = (
+				BDB467262866446400A4D18D /* Sources */,
+				BDB467272866446400A4D18D /* Frameworks */,
+				BDB467282866446400A4D18D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDB4672C2866446400A4D18D /* PBXTargetDependency */,
+			);
+			name = realtodoappUITests;
+			productName = realtodoappUITests;
+			productReference = BDB4672A2866446400A4D18D /* realtodoappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDB466FF2866446400A4D18D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BDB467062866446400A4D18D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					BDB4671F2866446400A4D18D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BDB467062866446400A4D18D;
+					};
+					BDB467292866446400A4D18D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = BDB467062866446400A4D18D;
+					};
+				};
+			};
+			buildConfigurationList = BDB467022866446400A4D18D /* Build configuration list for PBXProject "realtodoapp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDB466FE2866446400A4D18D;
+			productRefGroup = BDB467082866446400A4D18D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDB467062866446400A4D18D /* realtodoapp */,
+				BDB4671F2866446400A4D18D /* realtodoappTests */,
+				BDB467292866446400A4D18D /* realtodoappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDB467052866446400A4D18D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB4671A2866446400A4D18D /* LaunchScreen.storyboard in Resources */,
+				BDB467172866446400A4D18D /* Assets.xcassets in Resources */,
+				BDB467122866446400A4D18D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB4671E2866446400A4D18D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB467282866446400A4D18D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDB467032866446400A4D18D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB4670B2866446400A4D18D /* AppDelegate.swift in Sources */,
+				BD8347FE286648EE00249C2A /* ToDo.swift in Sources */,
+				BD8347FC286648A400249C2A /* ToDoTableViewController.swift in Sources */,
+				BD994B5C286A50EA00483AE8 /* CompleteToDoViewController.swift in Sources */,
+				BDB4670D2866446400A4D18D /* SceneDelegate.swift in Sources */,
+				BD994B58286A454100483AE8 /* AddToDoViewController.swift in Sources */,
+				BDB467152866446400A4D18D /* realtodoapp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB4671C2866446400A4D18D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB467252866446400A4D18D /* realtodoappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB467262866446400A4D18D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB467312866446400A4D18D /* realtodoappUITestsLaunchTests.swift in Sources */,
+				BDB4672F2866446400A4D18D /* realtodoappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDB467222866446400A4D18D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB467062866446400A4D18D /* realtodoapp */;
+			targetProxy = BDB467212866446400A4D18D /* PBXContainerItemProxy */;
+		};
+		BDB4672C2866446400A4D18D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB467062866446400A4D18D /* realtodoapp */;
+			targetProxy = BDB4672B2866446400A4D18D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDB467102866446400A4D18D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB467112866446400A4D18D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDB467182866446400A4D18D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB467192866446400A4D18D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDB467322866446400A4D18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDB467332866446400A4D18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDB467352866446400A4D18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V3FGTMMSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = realtodoapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwk.realtodoapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDB467362866446400A4D18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V3FGTMMSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = realtodoapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwk.realtodoapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDB467382866446400A4D18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V3FGTMMSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwk.realtodoappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/realtodoapp.app/realtodoapp";
+			};
+			name = Debug;
+		};
+		BDB467392866446400A4D18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V3FGTMMSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwk.realtodoappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/realtodoapp.app/realtodoapp";
+			};
+			name = Release;
+		};
+		BDB4673B2866446400A4D18D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V3FGTMMSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwk.realtodoappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = realtodoapp;
+			};
+			name = Debug;
+		};
+		BDB4673C2866446400A4D18D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8V3FGTMMSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kwk.realtodoappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = realtodoapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDB467022866446400A4D18D /* Build configuration list for PBXProject "realtodoapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB467322866446400A4D18D /* Debug */,
+				BDB467332866446400A4D18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB467342866446400A4D18D /* Build configuration list for PBXNativeTarget "realtodoapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB467352866446400A4D18D /* Debug */,
+				BDB467362866446400A4D18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB467372866446400A4D18D /* Build configuration list for PBXNativeTarget "realtodoappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB467382866446400A4D18D /* Debug */,
+				BDB467392866446400A4D18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB4673A2866446400A4D18D /* Build configuration list for PBXNativeTarget "realtodoappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB4673B2866446400A4D18D /* Debug */,
+				BDB4673C2866446400A4D18D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDB467132866446400A4D18D /* realtodoapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDB467142866446400A4D18D /* realtodoapp.xcdatamodel */,
+			);
+			currentVersion = BDB467142866446400A4D18D /* realtodoapp.xcdatamodel */;
+			path = realtodoapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BDB466FF2866446400A4D18D /* Project object */;
+}
